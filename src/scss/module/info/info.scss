@@ -1,0 +1,18 @@
+.info-hero {
+  width: 100%;
+  max-width: toRem(624);
+  padding: toRem(70);
+  clip-path: polygon(10% 0, 100% 0, 100% 85%, 90% 100%, 0 100%, 0 15%);
+  background-color: $yellow;
+  // .info__hero-text
+  &__text {
+    font-family: Archangelsk;
+    font-size: toRem(62);
+    margin-bottom: toRem(25);
+  }
+  // .info__hero-button
+  &__button {
+    font-size: toRem(24);
+    line-height: 1.666; /* 166.667% */
+  }
+}
