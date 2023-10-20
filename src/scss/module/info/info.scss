@@ -1,14 +1,27 @@
 .info-hero {
   width: 100%;
-  max-width: toRem(624);
+  // max-width: toRem(624);
   padding: toRem(70);
-  clip-path: polygon(10% 0, 100% 0, 100% 85%, 90% 100%, 0 100%, 0 15%);
+  @include adaptiv-mp(70, 30, padding-top, 1024);
+  @include adaptiv-mp(70, 30, padding-bottom, 1024);
+  @include adaptiv-mp(70, 15, padding-left, 720);
+  @include adaptiv-mp(70, 15, padding-right, 720);
   background-color: $yellow;
+
+  @media (max-width: 720px) {
+    text-align: center;
+  }
   // .info__hero-text
   &__text {
     font-family: Archangelsk;
-    font-size: toRem(62);
-    margin-bottom: toRem(25);
+    // font-size: toRem(62);
+    @include adaptiv-mp(62, 30, font-size, 1024);
+    // margin-bottom: toRem(25);
+    max-width: 7.8645em;
+
+    @media (max-width: 720px) {
+      max-width: none;
+    }
   }
   // .info__hero-button
   &__button {

@@ -10,7 +10,7 @@ body{
 	// display: flex; // FullPage
 	// flex-direction: column; // FullPage
 	color: $mainColor;
-	font-size: toRem(18);
+  @include adaptiv-mp(18, 16, font-size, 1024);
 	font-family: $fontFamily;
   position: relative;
   min-width: $minWidth + px;
@@ -132,14 +132,17 @@ picture {
   max-width: calc(var(--width) + var(--padding) * 2);
   margin: 0 auto;
   padding: 0 var(--padding);
+
+  @media (max-width: 720px) {
+    --padding: 12px;
+  }
 }
 section {
   margin-bottom: toRem(70);
-  padding-top: toRem(70);
 }
 .section__title {
   font-family: Archangelsk;
-  font-size: toRem(62);
+  @include adaptiv-mp(62, 30, font-size, 1024);
   font-weight: 400;
   margin-bottom: 25px;
 }
@@ -156,4 +159,7 @@ section {
     color: $yellow;
     background-color: $mainColor;
   }
+}
+.license {
+  @include adaptiv-mp(18, 14, "font-size");
 }

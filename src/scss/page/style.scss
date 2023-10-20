@@ -6,6 +6,8 @@
 
 
 @import "../../js/modules/swiper/swiper.base.scss";
+@import "../module/form.scss";
+@import "../module/list__items.scss";
 
 
 @import "../module/info/info.scss";
@@ -16,5 +18,10 @@
 @import "../../html/section/hero/hero.scss";
 @import "../../html/section/about/about.scss";
 @import "../../html/section/win/win.scss";
+@import "../../html/section/complect/complect.scss";
+@import "../../html/section/buy/buy.scss";
 
 @import "../../html/module/footer/footer.scss";
+
+@import "../../js/modules/justValidate/justValidate.scss";
+

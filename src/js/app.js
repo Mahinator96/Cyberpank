@@ -1,7 +1,8 @@
 // import './modules/isWebp.js';
 
 // Расскоментировать, если нужен динамический адаптив
-// import './modules/dynamic-adaptiv.js';
+import './modules/dynamic-adaptiv.js';
+
 // Расскоментировать если нужен бургер
 // import './modules/burger.js';
 
@@ -41,3 +42,10 @@ import './modules/hide-show-header/hide-show-header-relative.js' //(скрыва
 	// import './modules/observer/infinity-scroll.js';
 // FIXME:изменить функционал при клике на мобилке в меню (чтобы закрывалось и скролилось)
 
+// JustValidate
+import './modules/justValidate/justValidate.js';
+import './modules/validate-form.js';
+
+// Показать превью для загружаемой картинки
+// Добавить файл scss для кастомной стилизации @import "../../js/modules/justValidate/justValidate.scss";
+import './modules/form-file.js';
